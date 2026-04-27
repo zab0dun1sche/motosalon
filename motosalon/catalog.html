@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Каталог — МотоСалон</title>
+    <meta name="description" content="Каталог мототехники: мотоциклы, квадроциклы и аксессуары. Фильтр по категориям, цены и наличие." />
+    <meta name="theme-color" content="#0b0d10" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="catalog">
+    <div class="page">
+      <header class="header">
+        <div class="container header__inner">
+          <a class="brand" href="index.html" aria-label="На главную">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span>МотоСалон</span>
+          </a>
+          <nav class="nav" aria-label="Основная навигация">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div id="appError" class="alert" style="display:none"></div>
+
+          <div class="card card--padded">
+            <h1 style="margin:0 0 6px; font-size:26px">Каталог</h1>
+            <div class="muted small">
+              Товаров в выбранной категории: <strong id="catalogCount">—</strong>
+            </div>
+
+            <div class="toolbar">
+              <div class="select" role="group" aria-label="Фильтр по категориям">
+                <span class="muted small">Категория</span>
+                <select id="categorySelect" aria-label="Категория"></select>
+              </div>
+              <div class="muted small">
+                Тел.: <a data-company-phone-link href="#"><span data-company-phone>—</span></a>
+              </div>
+            </div>
+          </div>
+
+          <section class="section">
+            <div id="catalogList" class="grid" aria-live="polite"></div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div>© <span id="year"></span> МотоСалон</div>
+          <div class="muted small">
+            Тел.: <span data-company-phone>—</span> • Email: <span data-company-email>—</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="data/products.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
+

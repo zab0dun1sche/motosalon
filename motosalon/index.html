@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>МотоСалон — мототехника и аксессуары</title>
+    <meta name="description" content="Простой каталог мототехники: мотоциклы, квадроциклы и аксессуары. Цены, наличие и контакты для заказа." />
+    <meta name="theme-color" content="#0b0d10" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="page">
+      <header class="header">
+        <div class="container header__inner">
+          <a class="brand" href="index.html" aria-label="На главную">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span>МотоСалон</span>
+          </a>
+          <nav class="nav" aria-label="Основная навигация">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div id="appError" class="alert" style="display:none"></div>
+
+          <section class="hero">
+            <div class="card card--padded">
+              <span class="badge">Мототехника • Быстро • Понятно</span>
+              <h1 class="hero__title">Каталог мототехники для начинающих и не только</h1>
+              <p class="hero__subtitle">
+                Подберите мотоцикл, квадроцикл или аксессуары. На карточке товара — цена, наличие и кнопка заказа.
+              </p>
+              <div class="hero__cta">
+                <a class="btn btn--accent" href="catalog.html">Перейти в каталог</a>
+                <a class="btn btn--ghost" href="contacts.html">Связаться с нами</a>
+              </div>
+            </div>
+
+            <div class="card card--padded">
+              <h2 style="margin:0 0 10px; font-size:20px">Контакты для заказа</h2>
+              <div class="kv" style="border-top:0; padding-top:0; margin-top:0">
+                <div>Телефон</div>
+                <div><a data-company-phone-link href="#"><span data-company-phone>—</span></a></div>
+                <div>Email</div>
+                <div><a data-company-email-link href="#"><span data-company-email>—</span></a></div>
+                <div>Адрес</div>
+                <div><span data-company-address>—</span></div>
+              </div>
+              <p class="note" style="margin:12px 0 0">
+                Нажмите «Заказать» на товаре — мы подготовим ответ и поможем выбрать.
+              </p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="toolbar">
+              <h2>Популярные товары</h2>
+              <a class="btn btn--ghost" href="catalog.html">Открыть весь каталог</a>
+            </div>
+            <div id="popularList" class="grid" aria-live="polite"></div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div>© <span id="year"></span> МотоСалон</div>
+          <div class="muted small">
+            Тел.: <span data-company-phone>—</span> • Email: <span data-company-email>—</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="data/products.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
+

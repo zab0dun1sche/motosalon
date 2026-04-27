@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Контакты — МотоСалон</title>
+    <meta name="description" content="Контакты для заказа мототехники: телефон, email, адрес, карта и форма обратной связи." />
+    <meta name="theme-color" content="#0b0d10" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="contacts">
+    <div class="page">
+      <header class="header">
+        <div class="container header__inner">
+          <a class="brand" href="index.html" aria-label="На главную">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span>МотоСалон</span>
+          </a>
+          <nav class="nav" aria-label="Основная навигация">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div id="appError" class="alert" style="display:none"></div>
+
+          <section class="split">
+            <div class="card card--padded">
+              <h1 style="margin:0 0 10px; font-size:26px">Контакты</h1>
+              <div class="kv" style="border-top:0; padding-top:0; margin-top:0">
+                <div>Телефон</div>
+                <div><a data-company-phone-link href="#"><span data-company-phone>—</span></a></div>
+                <div>Email</div>
+                <div><a data-company-email-link href="#"><span data-company-email>—</span></a></div>
+                <div>Адрес</div>
+                <div><span data-company-address>—</span></div>
+              </div>
+              <p class="note" style="margin:12px 0 0">
+                Заполните форму — откроется ваш почтовый клиент с готовым текстом заявки.
+              </p>
+
+              <div id="formStatus" class="alert" style="margin-top:12px">
+                Поля обязательны: имя, контакт, сообщение.
+              </div>
+
+              <form id="contactForm" class="form" style="margin-top:12px">
+                <label class="field">
+                  <span class="muted small">Имя</span>
+                  <input id="name" name="name" autocomplete="name" required />
+                </label>
+                <label class="field">
+                  <span class="muted small">Email или телефон</span>
+                  <input id="contact" name="contact" autocomplete="email" required />
+                </label>
+                <label class="field">
+                  <span class="muted small">Сообщение</span>
+                  <textarea id="message" name="message" required></textarea>
+                </label>
+                <button class="btn btn--accent" type="submit">Отправить заявку</button>
+              </form>
+            </div>
+
+            <div class="card card--padded">
+              <h2 style="margin:0 0 10px; font-size:20px">Мы на карте</h2>
+              <div class="map" aria-label="Карта">
+                <iframe
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=Москва%20ул.%20Примерная%2010&output=embed"
+                  title="Карта: адрес магазина"
+                ></iframe>
+              </div>
+              <p class="note" style="margin:12px 0 0">
+                Адрес можно изменить в файле data/products.json (поле company.address).
+              </p>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div>© <span id="year"></span> МотоСалон</div>
+          <div class="muted small">
+            Тел.: <span data-company-phone>—</span> • Email: <span data-company-email>—</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="data/products.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
+

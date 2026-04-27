@@ -1,0 +1,379 @@
+{
+  "company": {
+    "name": "МотоСалон",
+    "phone": "+7 (900) 123-45-67",
+    "email": "sales@motosalon.example",
+    "address": "г. Москва, ул. Примерная, 10"
+  },
+  "categories": [
+    { "id": "moto", "title": "Мотоциклы" },
+    { "id": "atv", "title": "Квадроциклы" },
+    { "id": "accessories", "title": "Аксессуары" }
+  ],
+  "products": [
+    {
+      "id": "moto-street-200",
+      "name": "Street 200",
+      "category": "moto",
+      "price": 189000,
+      "inStock": true,
+      "short": "Легкий городской мотоцикл для начинающих.",
+      "description": "Street 200 — простой и надежный мотоцикл для ежедневных поездок. Подходит новичкам: предсказуемая тяга, комфортная посадка и доступное обслуживание.",
+      "images": [
+        "assets/img/street-200-1.svg",
+        "assets/img/street-200-2.svg",
+        "assets/img/street-200-3.svg"
+      ]
+    },
+    {
+      "id": "moto-enduro-250",
+      "name": "Enduro 250",
+      "category": "moto",
+      "price": 269000,
+      "inStock": true,
+      "short": "Эндуро для грунта и легкого бездорожья.",
+      "description": "Enduro 250 создан для активных выездов: высокий клиренс, удобная стойка и уверенная управляемость. Отличный выбор для смешанных маршрутов.",
+      "images": [
+        "assets/img/enduro-250-1.svg",
+        "assets/img/enduro-250-2.svg"
+      ]
+    },
+    {
+      "id": "moto-cruiser-400",
+      "name": "Cruiser 400",
+      "category": "moto",
+      "price": 459000,
+      "inStock": false,
+      "short": "Круизер для спокойных поездок и комфорта.",
+      "description": "Cruiser 400 — комфортная посадка и мягкий характер. Идеален для города и трассы, когда важны расслабленный стиль и стабильность.",
+      "images": [
+        "assets/img/cruiser-400-1.svg"
+      ]
+    },
+    {
+      "id": "atv-trail-300",
+      "name": "Trail ATV 300",
+      "category": "atv",
+      "price": 349000,
+      "inStock": true,
+      "short": "Универсальный квадроцикл для дачи и леса.",
+      "description": "Trail ATV 300 — выносливый помощник для хозяйства и прогулок. Хорошая тяга на низах, устойчивость и простая конструкция.",
+      "images": [
+        "assets/img/atv-300-1.svg",
+        "assets/img/atv-300-2.svg"
+      ]
+    },
+    {
+      "id": "access-helmet-urban",
+      "name": "Шлем Urban",
+      "category": "accessories",
+      "price": 9900,
+      "inStock": true,
+      "short": "Легкий шлем для ежедневных поездок.",
+      "description": "Шлем Urban — базовая защита и комфорт. Подходит для города, удобная посадка и вентиляция.",
+      "images": [
+        "assets/img/helmet-1.svg"
+      ]
+    },
+    {
+      "id": "access-gloves-pro",
+      "name": "Перчатки Pro Grip",
+      "category": "accessories",
+      "price": 3900,
+      "inStock": true,
+      "short": "Уверенный хват и защита кисти.",
+      "description": "Перчатки Pro Grip сделаны для контроля и удобства: плотная посадка, усиление в ключевых зонах и приятные материалы.",
+      "images": [
+        "assets/img/gloves-1.svg"
+      ]
+    },
+    {
+      "id": "moto-naked-300",
+      "name": "Naked 300",
+      "category": "moto",
+      "price": 329000,
+      "inStock": true,
+      "short": "Универсальный нейкед для города и трассы.",
+      "description": "Naked 300 — сбалансированный мотоцикл на каждый день: уверенная динамика, удобная посадка и предсказуемое управление.",
+      "images": [
+        "assets/img/street-200-1.svg",
+        "assets/img/street-200-2.svg"
+      ]
+    },
+    {
+      "id": "moto-sport-500",
+      "name": "Sport 500",
+      "category": "moto",
+      "price": 599000,
+      "inStock": false,
+      "short": "Спортбайк для тех, кто любит скорость.",
+      "description": "Sport 500 — яркий дизайн и спортивная посадка. Наличие уточняйте: модель быстро разбирают в сезон.",
+      "images": [
+        "assets/img/enduro-250-1.svg",
+        "assets/img/street-200-3.svg"
+      ]
+    },
+    {
+      "id": "moto-scooter-150",
+      "name": "Scooter 150",
+      "category": "moto",
+      "price": 149000,
+      "inStock": true,
+      "short": "Простой скутер для города и учебы.",
+      "description": "Scooter 150 — удобный вариант для ежедневных дел: компактный, экономичный и понятный в обслуживании.",
+      "images": [
+        "assets/img/street-200-2.svg"
+      ]
+    },
+    {
+      "id": "atv-util-450",
+      "name": "Utility ATV 450",
+      "category": "atv",
+      "price": 489000,
+      "inStock": true,
+      "short": "Тяговитый квадроцикл для хозяйственных задач.",
+      "description": "Utility ATV 450 — помощник для участка и выездов: устойчивость, тяга и практичный характер.",
+      "images": [
+        "assets/img/atv-300-1.svg",
+        "assets/img/atv-300-2.svg"
+      ]
+    },
+    {
+      "id": "atv-sport-200",
+      "name": "Sport ATV 200",
+      "category": "atv",
+      "price": 299000,
+      "inStock": true,
+      "short": "Легкий квадроцикл для прогулок и обучения.",
+      "description": "Sport ATV 200 подойдет новичкам: компактные габариты, простое управление и хорошая устойчивость.",
+      "images": [
+        "assets/img/atv-300-2.svg"
+      ]
+    },
+    {
+      "id": "access-jacket-urban",
+      "name": "Куртка Urban Ride",
+      "category": "accessories",
+      "price": 12900,
+      "inStock": true,
+      "short": "Городская мотокуртка на каждый день.",
+      "description": "Urban Ride — удобная посадка и универсальный стиль. Подойдет для ежедневных поездок в межсезонье.",
+      "images": [
+        "assets/img/cruiser-400-1.svg"
+      ]
+    },
+    {
+      "id": "access-lock-chain",
+      "name": "Замок-цепь Heavy Lock",
+      "category": "accessories",
+      "price": 2900,
+      "inStock": true,
+      "short": "Простая защита от угона для парковки.",
+      "description": "Heavy Lock — базовый вариант для повседневного использования: цепь + замок, удобно возить с собой.",
+      "images": [
+        "assets/img/gloves-1.svg"
+      ]
+    },
+    {
+      "id": "moto-adventure-650",
+      "name": "Adventure 650",
+      "category": "moto",
+      "price": 749000,
+      "inStock": true,
+      "short": "Турэндуро для дальних поездок и плохих дорог.",
+      "description": "Adventure 650 — комфорт на трассе и уверенность на грунтовке. Подходит для путешествий: удобная посадка и запас тяги.",
+      "images": [
+        "assets/img/enduro-250-1.svg",
+        "assets/img/enduro-250-2.svg"
+      ]
+    },
+    {
+      "id": "moto-classic-250",
+      "name": "Classic 250",
+      "category": "moto",
+      "price": 219000,
+      "inStock": true,
+      "short": "Классический стиль и спокойный характер.",
+      "description": "Classic 250 — простой мотоцикл для города: удобная посадка, понятное управление и приятный внешний вид.",
+      "images": [
+        "assets/img/cruiser-400-1.svg",
+        "assets/img/street-200-1.svg"
+      ]
+    },
+    {
+      "id": "moto-commuter-125",
+      "name": "Commuter 125",
+      "category": "moto",
+      "price": 119000,
+      "inStock": true,
+      "short": "Легкий и экономичный вариант для ежедневных поездок.",
+      "description": "Commuter 125 — отличный первый транспорт: простое обслуживание, небольшой расход и удобство в городе.",
+      "images": [
+        "assets/img/street-200-3.svg"
+      ]
+    },
+    {
+      "id": "moto-scrambler-300",
+      "name": "Scrambler 300",
+      "category": "moto",
+      "price": 359000,
+      "inStock": true,
+      "short": "Универсальный мотоцикл со внедорожным настроением.",
+      "description": "Scrambler 300 сочетает комфорт города и возможность съехать на грунт. Хороший выбор для смешанных маршрутов.",
+      "images": [
+        "assets/img/street-200-2.svg",
+        "assets/img/enduro-250-1.svg"
+      ]
+    },
+    {
+      "id": "moto-tourer-500",
+      "name": "Tourer 500",
+      "category": "moto",
+      "price": 569000,
+      "inStock": false,
+      "short": "Туристическая модель для спокойной езды.",
+      "description": "Tourer 500 ориентирован на комфорт: мягкая посадка и устойчивость на скорости. Наличие уточняйте.",
+      "images": [
+        "assets/img/cruiser-400-1.svg",
+        "assets/img/street-200-2.svg"
+      ]
+    },
+    {
+      "id": "moto-mini-110",
+      "name": "Mini 110",
+      "category": "moto",
+      "price": 79000,
+      "inStock": true,
+      "short": "Компактный минибайк для учебы и дачи.",
+      "description": "Mini 110 — компактный формат и простое управление. Подходит для закрытых площадок и коротких поездок.",
+      "images": [
+        "assets/img/street-200-1.svg"
+      ]
+    },
+    {
+      "id": "atv-kids-110",
+      "name": "Kids ATV 110",
+      "category": "atv",
+      "price": 99000,
+      "inStock": true,
+      "short": "Компактный квадроцикл для обучения.",
+      "description": "Kids ATV 110 — базовая модель для спокойного обучения под присмотром. Компактные размеры и простое управление.",
+      "images": [
+        "assets/img/atv-300-1.svg"
+      ]
+    },
+    {
+      "id": "atv-2up-550",
+      "name": "2-Up ATV 550",
+      "category": "atv",
+      "price": 579000,
+      "inStock": true,
+      "short": "Двухместный квадроцикл для поездок вдвоем.",
+      "description": "2-Up ATV 550 рассчитан на комфортные прогулки вдвоем: устойчивость, запас тяги и удобная посадка.",
+      "images": [
+        "assets/img/atv-300-2.svg",
+        "assets/img/atv-300-1.svg"
+      ]
+    },
+    {
+      "id": "atv-mud-700",
+      "name": "Mud ATV 700",
+      "category": "atv",
+      "price": 699000,
+      "inStock": false,
+      "short": "Модель для тяжелых условий и грязи.",
+      "description": "Mud ATV 700 — для тех, кто часто ездит по бездорожью. Наличие уточняйте, поставки ограничены.",
+      "images": [
+        "assets/img/atv-300-1.svg",
+        "assets/img/enduro-250-2.svg"
+      ]
+    },
+    {
+      "id": "atv-compact-150",
+      "name": "Compact ATV 150",
+      "category": "atv",
+      "price": 179000,
+      "inStock": true,
+      "short": "Легкий квадроцикл для прогулок и дачи.",
+      "description": "Compact ATV 150 — маневренный и простой. Хорошо подходит для дачных дорог и спокойных поездок.",
+      "images": [
+        "assets/img/atv-300-2.svg"
+      ]
+    },
+    {
+      "id": "access-helmet-modular",
+      "name": "Шлем Modular",
+      "category": "accessories",
+      "price": 15900,
+      "inStock": true,
+      "short": "Удобный модульный шлем для города и трассы.",
+      "description": "Шлем Modular — практичный вариант для повседневной езды: удобно снимать/надевать, подходит под разные сценарии.",
+      "images": [
+        "assets/img/helmet-1.svg"
+      ]
+    },
+    {
+      "id": "access-helmet-offroad",
+      "name": "Шлем Offroad",
+      "category": "accessories",
+      "price": 13900,
+      "inStock": true,
+      "short": "Шлем для эндуро и активных выездов.",
+      "description": "Offroad — вариант для активной езды: хорошая вентиляция и удобство при движении по пересеченной местности.",
+      "images": [
+        "assets/img/helmet-1.svg",
+        "assets/img/enduro-250-1.svg"
+      ]
+    },
+    {
+      "id": "access-boots-trail",
+      "name": "Ботинки Trail Boots",
+      "category": "accessories",
+      "price": 18900,
+      "inStock": false,
+      "short": "Мотоботы для защиты и уверенности.",
+      "description": "Trail Boots — для тех, кто хочет больше защиты. Наличие уточняйте, размеры могут быть ограничены.",
+      "images": [
+        "assets/img/cruiser-400-1.svg"
+      ]
+    },
+    {
+      "id": "access-knee-guards",
+      "name": "Наколенники Guard",
+      "category": "accessories",
+      "price": 4900,
+      "inStock": true,
+      "short": "Базовая защита коленей для поездок.",
+      "description": "Наколенники Guard — простой способ добавить защиты. Подходят для города и легкого бездорожья.",
+      "images": [
+        "assets/img/gloves-1.svg"
+      ]
+    },
+    {
+      "id": "access-topcase-35",
+      "name": "Кофр 35L City",
+      "category": "accessories",
+      "price": 7900,
+      "inStock": true,
+      "short": "Практичный кофр для повседневных задач.",
+      "description": "Кофр City 35L — удобно для работы и поездок по городу: помещается базовый набор вещей, простое крепление.",
+      "images": [
+        "assets/img/street-200-3.svg"
+      ]
+    },
+    {
+      "id": "access-phone-mount",
+      "name": "Крепление для телефона",
+      "category": "accessories",
+      "price": 1900,
+      "inStock": true,
+      "short": "Держатель смартфона на руль.",
+      "description": "Универсальное крепление на руль — для навигации и связи. Подходит для большинства смартфонов.",
+      "images": [
+        "assets/img/gloves-1.svg"
+      ]
+    }
+  ],
+  "popularIds": ["moto-adventure-650", "moto-naked-300", "atv-2up-550", "access-helmet-modular", "access-jacket-urban"]
+}
+

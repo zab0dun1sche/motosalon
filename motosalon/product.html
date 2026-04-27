@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Товар — МотоСалон</title>
+    <meta name="description" content="Карточка товара: фото, описание, цена, наличие и кнопка заказа." />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#0b0d10" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="product">
+    <div class="page">
+      <header class="header">
+        <div class="container header__inner">
+          <a class="brand" href="index.html" aria-label="На главную">
+            <span class="brand__mark" aria-hidden="true"></span>
+            <span>МотоСалон</span>
+          </a>
+          <nav class="nav" aria-label="Основная навигация">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container">
+          <div id="appError" class="alert" style="display:none"></div>
+
+          <div class="toolbar" style="margin-top:0">
+            <a class="btn btn--ghost" href="catalog.html">← Назад в каталог</a>
+            <div class="muted small">
+              Тел.: <a data-company-phone-link href="#"><span data-company-phone>—</span></a>
+            </div>
+          </div>
+
+          <section id="productRoot" class="section"></section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div>© <span id="year"></span> МотоСалон</div>
+          <div class="muted small">
+            Тел.: <span data-company-phone>—</span> • Email: <span data-company-email>—</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="data/products.js"></script>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
+

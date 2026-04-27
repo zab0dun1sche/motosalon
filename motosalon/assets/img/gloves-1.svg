@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="g" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11141a"/>
+      <stop offset="1" stop-color="#ff3b30" stop-opacity="0.65"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <g fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="5">
+    <path d="M480 200v220"/>
+    <path d="M540 190v240"/>
+    <path d="M600 190v245"/>
+    <path d="M660 205v220"/>
+    <path d="M440 430c0 140 70 250 190 250h140c60 0 120-40 120-100V390c0-80-65-140-145-140H590c-85 0-150 65-150 150z"/>
+  </g>
+  <text x="90" y="160" fill="rgba(233,238,245,0.92)" font-family="Segoe UI, Arial" font-size="56" font-weight="700">5@G0B:8 Pro Grip</text>
+  <text x="90" y="220" fill="rgba(233,238,245,0.75)" font-family="Segoe UI, Arial" font-size="26">7>1@065=85-703;CH:0</text>
+</svg>
+

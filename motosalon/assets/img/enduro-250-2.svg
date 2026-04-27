@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="g" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff3b30" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#0b0d10"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <rect x="60" y="60" width="1080" height="630" rx="34" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <g fill="none" stroke="rgba(255,255,255,0.20)" stroke-width="4">
+    <path d="M170 520c110-70 240-110 390-110 160 0 290 50 420 165"/>
+    <circle cx="420" cy="565" r="68"/>
+    <circle cx="840" cy="565" r="68"/>
+    <path d="M540 360l95-95h230"/>
+  </g>
+  <text x="100" y="175" fill="rgba(233,238,245,0.92)" font-family="Segoe UI, Arial" font-size="56" font-weight="700">Enduro 250</text>
+  <text x="100" y="235" fill="rgba(233,238,245,0.75)" font-family="Segoe UI, Arial" font-size="26">84 2</text>
+</svg>
+
